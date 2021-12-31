@@ -1,6 +1,10 @@
 function calculadora () {
     const operacao = Number(prompt('Escolha uma operação:\n 1 - Soma (+)\n 2 - Subtração (-)\n 3 - Multiplicação (*)\n 4 - Divisão Real(/)\n 5 - Divisão inteira (%)\n 6 - Potenciação (**)'));
 
+    if(operacao >= 7) {
+        alert("ERRO! Operação selecionada inválida.");
+        calculadora();
+    }
     let n1 = Number(prompt("Insira o primeiro valor: "));
     let n2 = Number(prompt("Insira o segundo valor: "));
     let resultado;
